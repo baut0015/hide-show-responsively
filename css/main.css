@@ -41,35 +41,37 @@ img {
   .dino-wrap img[src="images/diplodocus.jpg"],
   .dino-wrap img[src="images/hadrosaur.jpg"] {
     display: inline-block;
+    margin: -1px;
   }
 
   .dino-wrap {
-    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
   }
 
   .dino {
     display: inline-block;
-    width: 49%;
+    width: 50%;
+    margin: -2px;
     padding: 0;
-    margin: 0;
+    text-align: center;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  .dino {
-    display: inline-block;
-    width: 30%;
-  }
-
   .dino-wrap {
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 1px;
+    text-align: left;
   }
 
-  .dino-wrap img[src="images/diplodocus.jpg"] {
+  .dino img[src="images/diplodocus.jpg"] {
     display: none;
   }
 
@@ -77,6 +79,11 @@ img {
   .dino-wrap img[src="images/stegosaurus.jpg"],
   .dino-wrap img[src="images/hadrosaur.jpg"] {
     display: inline-block;
+    text-align: left;
+  }
+
+  .dino {
+    width: 55%;
   }
 
 }
@@ -91,9 +98,13 @@ img {
   }
 
   .dino {
-    width: 24%;
+    width: 25%;
     padding: 0;
     margin: 0;
+  }
+
+  .dino-wrap {
+    text-align: center;
   }
 
 }
