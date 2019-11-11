@@ -17,8 +17,7 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin: 8px;
 }
 
@@ -32,15 +31,16 @@ img {
 }
 
 @media only screen and (min-width: 25em) {
-  body {
-    display: flex;
-    flex-direction: wrap;
-    align-content: center;
+  .stegosaurus,
+  .iguanodon,
+  .diplodocus,
+  .hadrosaur {
+    display: inline-block;
+    max-width: 49%;
   }
 
-  .stegosaurus,
-  .iguanodon {
-    display: flex;
+  .dino-wrap {
+    display: inline-block;
   }
 
 }
@@ -48,27 +48,36 @@ img {
 
 @media only screen and (min-width: 38em) {
   .stegosaurus,
-  .iguanodon {
-    display: flex;
+  .iguanodon,
+  .hadrosaur {
+    display: inline-block;
+    max-width: 30%;
   }
 
+  .dino-wrap {
+    display: inline-block;
+
+  }
+
+  .diplodocus {
+    display: none;
+  }
 
 }
 
 
 @media only screen and (min-width: 60em) {
-  body {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .img {
-    min-width: 100%
-  }
-
   .stegosaurus,
-  .iguanodon {
-    display: flex;
+  .iguanodon,
+  .diplodocus,
+  .hadrosaur {
+    display: inline-block;
+    max-width: 24%;
+    margin: auto;
+  }
+
+  .dino-wrap {
+    margin-left: 20px;
   }
 
 }
